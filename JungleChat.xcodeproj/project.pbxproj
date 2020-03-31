@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		687DA20C2433508B00B5B46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20B2433508B00B5B46C /* AppDelegate.swift */; };
 		687DA20E2433508B00B5B46C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20D2433508B00B5B46C /* SceneDelegate.swift */; };
-		687DA2102433508B00B5B46C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20F2433508B00B5B46C /* ViewController.swift */; };
+		687DA2102433508B00B5B46C /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20F2433508B00B5B46C /* WelcomeVC.swift */; };
 		687DA2132433508B00B5B46C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687DA2112433508B00B5B46C /* Main.storyboard */; };
 		687DA2152433508E00B5B46C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 687DA2142433508E00B5B46C /* Assets.xcassets */; };
 		687DA2182433508E00B5B46C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 687DA2162433508E00B5B46C /* LaunchScreen.storyboard */; };
+		687DA2202433531800B5B46C /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA21F2433531800B5B46C /* RegisterVC.swift */; };
+		687DA2222433536500B5B46C /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA2212433536500B5B46C /* LoginVC.swift */; };
+		687DA2242433538A00B5B46C /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA2232433538A00B5B46C /* ChatVC.swift */; };
+		687DA2282433804100B5B46C /* Neucha-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 687DA2272433804100B5B46C /* Neucha-Regular.ttf */; };
+		687DA22B24339E4300B5B46C /* monkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22A24339E4300B5B46C /* monkey.wav */; };
+		687DA22F2433AD5900B5B46C /* login.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22D2433AD5900B5B46C /* login.wav */; };
+		687DA2302433AD5900B5B46C /* register.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22E2433AD5900B5B46C /* register.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		687DA2082433508B00B5B46C /* JungleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JungleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687DA20B2433508B00B5B46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		687DA20D2433508B00B5B46C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		687DA20F2433508B00B5B46C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		687DA20F2433508B00B5B46C /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		687DA2122433508B00B5B46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		687DA2142433508E00B5B46C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		687DA2172433508E00B5B46C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		687DA2192433508E00B5B46C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		687DA21F2433531800B5B46C /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		687DA2212433536500B5B46C /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		687DA2232433538A00B5B46C /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		687DA2272433804100B5B46C /* Neucha-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Neucha-Regular.ttf"; sourceTree = "<group>"; };
+		687DA22A24339E4300B5B46C /* monkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monkey.wav; sourceTree = "<group>"; };
+		687DA22D2433AD5900B5B46C /* login.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = login.wav; sourceTree = "<group>"; };
+		687DA22E2433AD5900B5B46C /* register.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = register.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				687DA20A2433508B00B5B46C /* JungleChat */,
+				687DA22C24339E4800B5B46C /* Music */,
 				687DA2092433508B00B5B46C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,13 +73,51 @@
 			children = (
 				687DA20B2433508B00B5B46C /* AppDelegate.swift */,
 				687DA20D2433508B00B5B46C /* SceneDelegate.swift */,
-				687DA20F2433508B00B5B46C /* ViewController.swift */,
-				687DA2112433508B00B5B46C /* Main.storyboard */,
-				687DA2142433508E00B5B46C /* Assets.xcassets */,
-				687DA2162433508E00B5B46C /* LaunchScreen.storyboard */,
+				687DA226243353E800B5B46C /* View */,
+				687DA225243353DF00B5B46C /* Controllers */,
+				687DA2292433806300B5B46C /* Supporting Files */,
 				687DA2192433508E00B5B46C /* Info.plist */,
 			);
 			path = JungleChat;
+			sourceTree = "<group>";
+		};
+		687DA225243353DF00B5B46C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				687DA20F2433508B00B5B46C /* WelcomeVC.swift */,
+				687DA21F2433531800B5B46C /* RegisterVC.swift */,
+				687DA2212433536500B5B46C /* LoginVC.swift */,
+				687DA2232433538A00B5B46C /* ChatVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		687DA226243353E800B5B46C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				687DA2112433508B00B5B46C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		687DA2292433806300B5B46C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				687DA2142433508E00B5B46C /* Assets.xcassets */,
+				687DA2272433804100B5B46C /* Neucha-Regular.ttf */,
+				687DA2162433508E00B5B46C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		687DA22C24339E4800B5B46C /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				687DA22A24339E4300B5B46C /* monkey.wav */,
+				687DA22E2433AD5900B5B46C /* register.wav */,
+				687DA22D2433AD5900B5B46C /* login.wav */,
+			);
+			name = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +179,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				687DA2182433508E00B5B46C /* LaunchScreen.storyboard in Resources */,
+				687DA2282433804100B5B46C /* Neucha-Regular.ttf in Resources */,
+				687DA22B24339E4300B5B46C /* monkey.wav in Resources */,
 				687DA2152433508E00B5B46C /* Assets.xcassets in Resources */,
+				687DA22F2433AD5900B5B46C /* login.wav in Resources */,
+				687DA2302433AD5900B5B46C /* register.wav in Resources */,
 				687DA2132433508B00B5B46C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +195,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				687DA2102433508B00B5B46C /* ViewController.swift in Sources */,
+				687DA2242433538A00B5B46C /* ChatVC.swift in Sources */,
+				687DA2102433508B00B5B46C /* WelcomeVC.swift in Sources */,
+				687DA2202433531800B5B46C /* RegisterVC.swift in Sources */,
 				687DA20C2433508B00B5B46C /* AppDelegate.swift in Sources */,
 				687DA20E2433508B00B5B46C /* SceneDelegate.swift in Sources */,
+				687DA2222433536500B5B46C /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

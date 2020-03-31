@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wch-C9-qw5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Neucha-Regular.ttf">
+            <string>Neucha</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WelcomeVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="JungleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌴JungleChat🌴🐒" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXz-WB-W46">
+                                <rect key="frame" x="0.0" y="418" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Hef-lJ-dOf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="52"/>
+                                <color key="textColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpC-PE-xt1">
+                                <rect key="frame" x="0.0" y="662" width="414" height="60"/>
+                                <color key="backgroundColor" red="0.65490196078431373" green="0.9137254901960784" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="EUA-gE-g6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="35"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.41568627450980389" green="0.5490196078431373" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="s4P-kH-IDs" kind="show" id="9Gg-Wx-9lH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ad-nv-XRw">
+                                <rect key="frame" x="0.0" y="742" width="414" height="60"/>
+                                <color key="backgroundColor" red="0.45882352941176469" green="0.71764705882352942" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5NR-Ah-cOl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="35"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="jt9-iR-hcW" kind="show" id="J5P-LE-U5g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686270000003" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fXz-WB-W46" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="87n-hz-2Qn"/>
+                            <constraint firstItem="fXz-WB-W46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8OJ-II-4oQ"/>
+                            <constraint firstItem="fXz-WB-W46" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B7L-C8-bss"/>
+                            <constraint firstItem="OpC-PE-xt1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nrb-dl-laX"/>
+                            <constraint firstItem="OpC-PE-xt1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SxR-Jm-oRa"/>
+                            <constraint firstItem="3ad-nv-XRw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UUT-8w-Mnc"/>
+                            <constraint firstItem="3ad-nv-XRw" firstAttribute="top" secondItem="OpC-PE-xt1" secondAttribute="bottom" constant="20" id="dfZ-24-ohu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fXz-WB-W46" secondAttribute="trailing" id="fB5-T8-Z0U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3ad-nv-XRw" secondAttribute="bottom" constant="60" id="u1J-Sh-D7d"/>
+                            <constraint firstItem="3ad-nv-XRw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vh7-PO-fRj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JUS-ap-sSU"/>
+                    <connections>
+                        <outlet property="loginButton" destination="3ad-nv-XRw" id="q6q-kF-2j1"/>
+                        <outlet property="registerButton" destination="OpC-PE-xt1" id="PB2-LZ-wTs"/>
+                        <outlet property="titleLabel" destination="fXz-WB-W46" id="FOR-M7-crR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--RegisterVC-->
+        <scene sceneID="1PS-Na-kyk">
+            <objects>
+                <viewController id="s4P-kH-IDs" customClass="RegisterVC" customModule="JungleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lwU-lh-XqD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.65490196078431373" green="0.9137254901960784" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="7yr-NB-mD6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2yw-4I-mfL"/>
+                    <connections>
+                        <segue destination="ua8-Yg-IhR" kind="show" identifier="RegisterToChat" id="Wxo-64-HDv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OEq-28-N83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1919" y="-207"/>
+        </scene>
+        <!--LoginVC-->
+        <scene sceneID="0iD-GN-rY4">
+            <objects>
+                <viewController id="jt9-iR-hcW" customClass="LoginVC" customModule="JungleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mQq-C5-DUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.71764705880000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="dCU-aQ-cOJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IlA-V8-Lb4"/>
+                    <connections>
+                        <segue destination="ua8-Yg-IhR" kind="show" identifier="LoginToChat" id="huW-wL-iuF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HqQ-de-DSk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1945" y="455"/>
+        </scene>
+        <!--ChatVC-->
+        <scene sceneID="XLg-Nv-f7a">
+            <objects>
+                <viewController id="ua8-Yg-IhR" customClass="ChatVC" customModule="JungleChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sbl-dd-7Xv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.41568627450980389" green="0.5490196078431373" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="TXw-SC-a1l"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hkN-f6-UQO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCl-uG-zQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2683" y="130"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uvj-En-0RO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wch-C9-qw5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" autoresizesSubviews="NO" alpha="0.5" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jga-SF-CMQ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.99215686270000003" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lG9-t9-965"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSs-OM-5zP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="huW-wL-iuF"/>
+    </inferredMetricsTieBreakers>
+</document>
