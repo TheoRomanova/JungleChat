@@ -20,14 +20,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌴JungleChat🌴🐒" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXz-WB-W46">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌴JungleChat🌴🐒" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXz-WB-W46">
                                 <rect key="frame" x="0.0" y="418" width="414" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Hef-lJ-dOf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="52"/>
-                                <color key="textColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="53"/>
+                                <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpC-PE-xt1">
                                 <rect key="frame" x="0.0" y="662" width="414" height="60"/>
@@ -36,8 +38,10 @@
                                     <constraint firstAttribute="height" constant="60" id="EUA-gE-g6C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="35"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Register">
-                                    <color key="titleColor" red="0.41568627450980389" green="0.5490196078431373" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="s4P-kH-IDs" kind="show" id="9Gg-Wx-9lH"/>
@@ -50,8 +54,10 @@
                                     <constraint firstAttribute="height" constant="60" id="5NR-Ah-cOl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="35"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="jt9-iR-hcW" kind="show" id="J5P-LE-U5g"/>
@@ -91,17 +97,48 @@
                     <view key="view" contentMode="scaleToFill" id="lwU-lh-XqD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-26-Y8b">
+                                <rect key="frame" x="53" y="120" width="320" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="CET-e1-dg9">
+                                <rect key="frame" x="53" y="182" width="320" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV8-PU-cbU">
+                                <rect key="frame" x="154" y="246" width="137" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="45"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerTapped:" destination="s4P-kH-IDs" eventType="touchUpInside" id="Lf3-wG-aBj"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.65490196078431373" green="0.9137254901960784" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="7yr-NB-mD6"/>
                     </view>
                     <navigationItem key="navigationItem" id="2yw-4I-mfL"/>
                     <connections>
+                        <outlet property="emailTextField" destination="IaB-26-Y8b" id="1Zi-Mm-eEM"/>
+                        <outlet property="passwordTextField" destination="CET-e1-dg9" id="Qse-jB-dnW"/>
                         <segue destination="ua8-Yg-IhR" kind="show" identifier="RegisterToChat" id="Wxo-64-HDv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEq-28-N83" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1919" y="-207"/>
+            <point key="canvasLocation" x="1918.840579710145" y="-207.58928571428569"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="0iD-GN-rY4">
@@ -122,7 +159,7 @@
             </objects>
             <point key="canvasLocation" x="1945" y="455"/>
         </scene>
-        <!--ChatVC-->
+        <!--JungleChat-->
         <scene sceneID="XLg-Nv-f7a">
             <objects>
                 <viewController id="ua8-Yg-IhR" customClass="ChatVC" customModule="JungleChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -132,7 +169,7 @@
                         <color key="backgroundColor" red="0.41568627450980389" green="0.5490196078431373" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="TXw-SC-a1l"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hkN-f6-UQO"/>
+                    <navigationItem key="navigationItem" title="JungleChat" id="hkN-f6-UQO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCl-uG-zQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,12 +180,18 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wch-C9-qw5" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" autoresizesSubviews="NO" alpha="0.5" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jga-SF-CMQ">
+                    <navigationBar key="navigationBar" autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jga-SF-CMQ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.65490196079999996" green="0.91372549020000005" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.99215686270000003" green="0.44705882349999998" blue="0.44705882349999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="40"/>
+                            <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -161,6 +204,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="huW-wL-iuF"/>
+        <segue reference="Wxo-64-HDv"/>
     </inferredMetricsTieBreakers>
 </document>

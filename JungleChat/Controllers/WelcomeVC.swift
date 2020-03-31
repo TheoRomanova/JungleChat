@@ -54,7 +54,7 @@ class WelcomeVC: UIViewController {
         guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist") }
         navBar.isHidden = true
         
-        self.playSound(song: "monkey", loopsCount: 3 )
+        self.playSound(song: "monkey", loopsCount: 7 )
     }
     
     override func viewDidDisappear(_ animated: Bool) {
