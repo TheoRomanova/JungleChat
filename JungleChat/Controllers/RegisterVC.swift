@@ -12,28 +12,17 @@ import SwiftUI
 
 class RegisterVC: UIViewController {
     
-    @IBOutlet weak var emailTextField: UITextField! {
-      
-        didSet {
-            emailTextField.layer.cornerRadius = 20
-            emailTextField.clipsToBounds = true
-        }
-    }
-   
-    @IBOutlet weak var passwordTextField: UITextField! {
-        
-        didSet {
-            passwordTextField.layer.cornerRadius = 20
-            passwordTextField.clipsToBounds = true
-        }
-    }
+    @IBOutlet weak var emailTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
     
     private var player: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        emailTextField.layer.cornerRadius = 20
+        passwordTextField.layer.cornerRadius = 20
         
     }
     
@@ -47,7 +36,7 @@ class RegisterVC: UIViewController {
         player = try! AVAudioPlayer(contentsOf: url!)
         player?.play()
     }
-
+    
     // MARK: - Navigation
     
 }
