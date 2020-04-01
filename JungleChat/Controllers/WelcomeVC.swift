@@ -31,8 +31,6 @@ class WelcomeVC: UIViewController {
         }
     }
     
-    private var player: AVAudioPlayer?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -54,20 +52,11 @@ class WelcomeVC: UIViewController {
         guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist") }
         navBar.isHidden = true
         
-        self.playSound(song: "monkey", loopsCount: 7 )
+        PlayerService.playSound(song: "monkey", loopsCount: 7)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         navigationController?.navigationBar.isHidden = false
-    }
-    
-    //MARK: - AVFoundation
-    
-    func playSound(song: String, loopsCount: Int) {
-        let url = Bundle.main.url(forResource: song, withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player?.numberOfLoops = loopsCount
-        player?.play()
     }
 }
 

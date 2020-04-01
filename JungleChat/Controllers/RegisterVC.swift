@@ -8,7 +8,7 @@
 
 import UIKit
 import AVFoundation
-import SwiftUI
+import Firebase
 
 class RegisterVC: UIViewController {
     
@@ -16,27 +16,32 @@ class RegisterVC: UIViewController {
     
     @IBOutlet weak var passwordTextField: UITextField!
     
-    private var player: AVAudioPlayer?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         emailTextField.layer.cornerRadius = 20
         passwordTextField.layer.cornerRadius = 20
-        
     }
-    
     
     @IBAction func registerTapped(_ sender: UIButton) {
-        playSound()
+        PlayerService.playSound(song: "register", loopsCount: 0)
+        
+        if let email = emailTextField.text, let password = passwordTextField.text {
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                
+                if let  smthWrong = error {
+                    let alert = UIAlertController(title: "\(smthWrong.localizedDescription)", message: "", preferredStyle: .alert)
+                    let action = UIAlertAction(title: "Try again 🦧🌴", style: .cancel, handler: nil)
+                    alert.addAction(action)
+                    self.present(alert, animated: true, completion:nil)
+                    
+                } else {
+                    PlayerService.getPlayer().stop()
+                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                }
+            }
+        }
     }
-    
-    func playSound() {
-        let url = Bundle.main.url(forResource: "register", withExtension: "wav")
-        player = try! AVAudioPlayer(contentsOf: url!)
-        player?.play()
-    }
-    
     // MARK: - Navigation
     
 }

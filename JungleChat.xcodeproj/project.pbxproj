@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		687DA22B24339E4300B5B46C /* monkey.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22A24339E4300B5B46C /* monkey.wav */; };
 		687DA22F2433AD5900B5B46C /* login.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22D2433AD5900B5B46C /* login.wav */; };
 		687DA2302433AD5900B5B46C /* register.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22E2433AD5900B5B46C /* register.wav */; };
+		688790DB2434EDEB008F6F8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 688790DA2434EDEB008F6F8D /* GoogleService-Info.plist */; };
+		68D92B58243516EC00BDC928 /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D92B57243516EC00BDC928 /* PlayerService.swift */; };
+		C3DF72FC2A50ECC670BCA793 /* Pods_JungleChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03102CD218AEA71755540E3 /* Pods_JungleChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,12 @@
 		687DA22A24339E4300B5B46C /* monkey.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = monkey.wav; sourceTree = "<group>"; };
 		687DA22D2433AD5900B5B46C /* login.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = login.wav; sourceTree = "<group>"; };
 		687DA22E2433AD5900B5B46C /* register.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = register.wav; sourceTree = "<group>"; };
+		688790DA2434EDEB008F6F8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68D92B57243516EC00BDC928 /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerService.swift; path = JungleChat/Controllers/Service/PlayerService.swift; sourceTree = "<group>"; };
+		68D92B592435170800BDC928 /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayerService.swift; path = JungleChat/Controllers/Service/PlayerService.swift; sourceTree = "<group>"; };
+		B6EBE13479182826B287E7C2 /* Pods-JungleChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JungleChat.release.xcconfig"; path = "Target Support Files/Pods-JungleChat/Pods-JungleChat.release.xcconfig"; sourceTree = "<group>"; };
+		BE533171940117F76202239F /* Pods-JungleChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JungleChat.debug.xcconfig"; path = "Target Support Files/Pods-JungleChat/Pods-JungleChat.debug.xcconfig"; sourceTree = "<group>"; };
+		D03102CD218AEA71755540E3 /* Pods_JungleChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JungleChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DF72FC2A50ECC670BCA793 /* Pods_JungleChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,9 +64,12 @@
 		687DA1FF2433508B00B5B46C = {
 			isa = PBXGroup;
 			children = (
+				68D92B57243516EC00BDC928 /* PlayerService.swift */,
 				687DA20A2433508B00B5B46C /* JungleChat */,
 				687DA22C24339E4800B5B46C /* Music */,
 				687DA2092433508B00B5B46C /* Products */,
+				E911816E6B9B5752616EE0BA /* Pods */,
+				E8FDE0D1B68A3557FCEE73DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,8 +88,10 @@
 				687DA20D2433508B00B5B46C /* SceneDelegate.swift */,
 				687DA226243353E800B5B46C /* View */,
 				687DA225243353DF00B5B46C /* Controllers */,
+				68D92B5A2435170800BDC928 /* Service */,
 				687DA2292433806300B5B46C /* Supporting Files */,
 				687DA2192433508E00B5B46C /* Info.plist */,
+				688790DA2434EDEB008F6F8D /* GoogleService-Info.plist */,
 			);
 			path = JungleChat;
 			sourceTree = "<group>";
@@ -120,6 +135,32 @@
 			name = Music;
 			sourceTree = "<group>";
 		};
+		68D92B5A2435170800BDC928 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				68D92B592435170800BDC928 /* PlayerService.swift */,
+			);
+			name = Service;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E8FDE0D1B68A3557FCEE73DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D03102CD218AEA71755540E3 /* Pods_JungleChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E911816E6B9B5752616EE0BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE533171940117F76202239F /* Pods-JungleChat.debug.xcconfig */,
+				B6EBE13479182826B287E7C2 /* Pods-JungleChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,9 +168,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 687DA21C2433508E00B5B46C /* Build configuration list for PBXNativeTarget "JungleChat" */;
 			buildPhases = (
+				43E961760FAC9AFAA60D1BF9 /* [CP] Check Pods Manifest.lock */,
 				687DA2042433508B00B5B46C /* Sources */,
 				687DA2052433508B00B5B46C /* Frameworks */,
 				687DA2062433508B00B5B46C /* Resources */,
+				F27079E545350099CC389078 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				687DA2182433508E00B5B46C /* LaunchScreen.storyboard in Resources */,
+				688790DB2434EDEB008F6F8D /* GoogleService-Info.plist in Resources */,
 				687DA2282433804100B5B46C /* Neucha-Regular.ttf in Resources */,
 				687DA22B24339E4300B5B46C /* monkey.wav in Resources */,
 				687DA2152433508E00B5B46C /* Assets.xcassets in Resources */,
@@ -190,12 +234,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		43E961760FAC9AFAA60D1BF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JungleChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F27079E545350099CC389078 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		687DA2042433508B00B5B46C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				687DA2242433538A00B5B46C /* ChatVC.swift in Sources */,
+				68D92B58243516EC00BDC928 /* PlayerService.swift in Sources */,
 				687DA2102433508B00B5B46C /* WelcomeVC.swift in Sources */,
 				687DA2202433531800B5B46C /* RegisterVC.swift in Sources */,
 				687DA20C2433508B00B5B46C /* AppDelegate.swift in Sources */,
@@ -342,6 +429,7 @@
 		};
 		687DA21D2433508E00B5B46C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE533171940117F76202239F /* Pods-JungleChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -360,6 +448,7 @@
 		};
 		687DA21E2433508E00B5B46C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EBE13479182826B287E7C2 /* Pods-JungleChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

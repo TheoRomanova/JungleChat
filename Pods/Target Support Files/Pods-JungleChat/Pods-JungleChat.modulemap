@@ -1,0 +1,6 @@
+framework module Pods_JungleChat {
+  umbrella header "Pods-JungleChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

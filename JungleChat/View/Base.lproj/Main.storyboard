@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wch-C9-qw5">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -234,14 +234,78 @@
                     <view key="view" contentMode="scaleToFill" id="Sbl-dd-7Xv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jfJ-Kn-F8j">
+                                <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-Q1-6S3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="684"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Onq-Ju-Aab">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Onq-Ju-Aab" id="143-xi-mHT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7z-xt-MfS">
+                                        <rect key="frame" x="20" y="704" width="374" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKC-U0-Trg" userLabel="ChatTextField">
+                                                <rect key="frame" x="0.0" y="0.0" width="312" height="50"/>
+                                                <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="W7C-Fy-ZTe"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jc-fI-Eog">
+                                                <rect key="frame" x="312" y="1.6666666666666643" width="62" height="47"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="62" id="Lhe-ZD-G67"/>
+                                                    <constraint firstAttribute="height" constant="50.000000000000007" id="jft-mF-Yo0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="tintColor" red="0.96078431369999995" green="0.98823529409999999" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                <size key="titleShadowOffset" width="1" height="1"/>
+                                                <state key="normal" backgroundImage="arrowshape.turn.up.right" catalog="system">
+                                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="P7z-xt-MfS" firstAttribute="leading" secondItem="jfJ-Kn-F8j" secondAttribute="leading" constant="20" id="8Ny-95-8hR"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7z-xt-MfS" secondAttribute="trailing" constant="20" id="F4U-HM-fvi"/>
+                                    <constraint firstItem="P7z-xt-MfS" firstAttribute="leading" secondItem="jfJ-Kn-F8j" secondAttribute="leading" constant="20" id="VqG-g2-oWV"/>
+                                    <constraint firstItem="hYO-Q1-6S3" firstAttribute="leading" secondItem="jfJ-Kn-F8j" secondAttribute="leading" id="mA4-9F-xOL"/>
+                                    <constraint firstAttribute="trailing" secondItem="hYO-Q1-6S3" secondAttribute="trailing" id="mb3-tH-Gjs"/>
+                                    <constraint firstItem="P7z-xt-MfS" firstAttribute="top" secondItem="hYO-Q1-6S3" secondAttribute="bottom" constant="20" id="ssy-Zy-l4d"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7z-xt-MfS" secondAttribute="trailing" constant="20" id="tuO-nE-weS"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.41568627450980389" green="0.5490196078431373" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jfJ-Kn-F8j" firstAttribute="top" secondItem="TXw-SC-a1l" secondAttribute="top" constant="20" id="1Jn-F4-o1Z"/>
+                            <constraint firstItem="TXw-SC-a1l" firstAttribute="bottom" secondItem="jfJ-Kn-F8j" secondAttribute="bottom" id="6mM-JG-Zm7"/>
+                            <constraint firstItem="TXw-SC-a1l" firstAttribute="trailing" secondItem="jfJ-Kn-F8j" secondAttribute="trailing" id="KaR-Zh-SrW"/>
+                            <constraint firstItem="jfJ-Kn-F8j" firstAttribute="leading" secondItem="Sbl-dd-7Xv" secondAttribute="leading" id="R6c-7d-yJd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TXw-SC-a1l"/>
                     </view>
                     <navigationItem key="navigationItem" title="JungleChat" id="hkN-f6-UQO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCl-uG-zQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2683" y="130"/>
+            <point key="canvasLocation" x="2682.608695652174" y="129.91071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uvj-En-0RO">
@@ -271,6 +335,9 @@
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="huW-wL-iuF"/>
     </inferredMetricsTieBreakers>
