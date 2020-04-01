@@ -25,11 +25,11 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Hef-lJ-dOf"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="53"/>
                                 <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="highlightedColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="1"/>
+                                <size key="shadowOffset" width="2" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpC-PE-xt1">
                                 <rect key="frame" x="0.0" y="662" width="414" height="60"/>
@@ -38,7 +38,7 @@
                                     <constraint firstAttribute="height" constant="60" id="EUA-gE-g6C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="35"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <size key="titleShadowOffset" width="2" height="1"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -70,10 +70,12 @@
                             <constraint firstItem="fXz-WB-W46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8OJ-II-4oQ"/>
                             <constraint firstItem="fXz-WB-W46" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B7L-C8-bss"/>
                             <constraint firstItem="OpC-PE-xt1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Nrb-dl-laX"/>
+                            <constraint firstItem="fXz-WB-W46" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P0d-Wb-EOX"/>
                             <constraint firstItem="OpC-PE-xt1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SxR-Jm-oRa"/>
                             <constraint firstItem="3ad-nv-XRw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UUT-8w-Mnc"/>
                             <constraint firstItem="3ad-nv-XRw" firstAttribute="top" secondItem="OpC-PE-xt1" secondAttribute="bottom" constant="20" id="dfZ-24-ohu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fXz-WB-W46" secondAttribute="trailing" id="fB5-T8-Z0U"/>
+                            <constraint firstItem="fXz-WB-W46" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ibe-5s-Acn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3ad-nv-XRw" secondAttribute="bottom" constant="60" id="u1J-Sh-D7d"/>
                             <constraint firstItem="3ad-nv-XRw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vh7-PO-fRj"/>
                         </constraints>
@@ -98,25 +100,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-26-Y8b">
-                                <rect key="frame" x="47" y="134" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-26-Y8b">
+                                <rect key="frame" x="45" y="138" width="324" height="55"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="7E1-vo-WnB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CET-e1-dg9">
-                                <rect key="frame" x="47" y="196" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="CET-e1-dg9">
+                                <rect key="frame" x="45" y="213" width="324" height="55"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="fCi-xt-pDu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV8-PU-cbU">
-                                <rect key="frame" x="110" y="261" width="195" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV8-PU-cbU">
+                                <rect key="frame" x="110" y="293" width="194" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="a3a-nb-Lm5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="45"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <size key="titleShadowOffset" width="2" height="1"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -127,6 +135,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.65490196078431373" green="0.9137254901960784" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IaB-26-Y8b" firstAttribute="top" secondItem="lwU-lh-XqD" secondAttribute="top" constant="138" id="Dak-PO-UYN"/>
+                            <constraint firstItem="7yr-NB-mD6" firstAttribute="trailing" secondItem="IaB-26-Y8b" secondAttribute="trailing" constant="45" id="JhQ-Of-fYP"/>
+                            <constraint firstItem="IaB-26-Y8b" firstAttribute="leading" secondItem="7yr-NB-mD6" secondAttribute="leading" constant="45" id="KSy-nV-2gA"/>
+                            <constraint firstItem="CET-e1-dg9" firstAttribute="top" secondItem="IaB-26-Y8b" secondAttribute="bottom" constant="20" id="PWF-Qn-Tw1"/>
+                            <constraint firstItem="CET-e1-dg9" firstAttribute="leading" secondItem="7yr-NB-mD6" secondAttribute="leading" constant="45" id="RBA-wv-PcE"/>
+                            <constraint firstItem="OV8-PU-cbU" firstAttribute="top" secondItem="CET-e1-dg9" secondAttribute="bottom" constant="25" id="TZs-cu-4Z2"/>
+                            <constraint firstItem="7yr-NB-mD6" firstAttribute="trailing" secondItem="CET-e1-dg9" secondAttribute="trailing" constant="45" id="TxI-zz-d8C"/>
+                            <constraint firstItem="7yr-NB-mD6" firstAttribute="trailing" secondItem="OV8-PU-cbU" secondAttribute="trailing" constant="110" id="eLz-yH-ROd"/>
+                            <constraint firstItem="OV8-PU-cbU" firstAttribute="leading" secondItem="7yr-NB-mD6" secondAttribute="leading" constant="110" id="mpd-mf-uPz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7yr-NB-mD6"/>
                     </view>
                     <navigationItem key="navigationItem" id="2yw-4I-mfL"/>
@@ -148,25 +167,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="1Qw-Pz-Z3t">
-                                <rect key="frame" x="47" y="131" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="1Qw-Pz-Z3t">
+                                <rect key="frame" x="45" y="138" width="324" height="55"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Rvq-eR-0ee"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="vn8-AF-cmp">
-                                <rect key="frame" x="47" y="193" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="center" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="vn8-AF-cmp">
+                                <rect key="frame" x="45" y="213" width="324" height="55"/>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="eb0-qG-hOs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg9-XX-xSA">
-                                <rect key="frame" x="110" y="258" width="195" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg9-XX-xSA">
+                                <rect key="frame" x="110" y="288" width="194" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hlc-IO-pP2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="45"/>
-                                <size key="titleShadowOffset" width="3" height="1"/>
+                                <size key="titleShadowOffset" width="4" height="1"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -178,6 +203,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.45882352939999999" green="0.71764705880000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dCU-aQ-cOJ" firstAttribute="trailing" secondItem="Sg9-XX-xSA" secondAttribute="trailing" constant="110" id="2Of-jy-Kda"/>
+                            <constraint firstItem="Sg9-XX-xSA" firstAttribute="leading" secondItem="dCU-aQ-cOJ" secondAttribute="leading" constant="110" id="5hT-fs-W2X"/>
+                            <constraint firstItem="dCU-aQ-cOJ" firstAttribute="trailing" secondItem="vn8-AF-cmp" secondAttribute="trailing" constant="45" id="Tmw-MU-HYJ"/>
+                            <constraint firstItem="Sg9-XX-xSA" firstAttribute="top" secondItem="vn8-AF-cmp" secondAttribute="bottom" constant="20" id="gkK-RP-Tww"/>
+                            <constraint firstItem="vn8-AF-cmp" firstAttribute="leading" secondItem="dCU-aQ-cOJ" secondAttribute="leading" constant="45" id="h39-py-9g6"/>
+                            <constraint firstItem="dCU-aQ-cOJ" firstAttribute="trailing" secondItem="1Qw-Pz-Z3t" secondAttribute="trailing" constant="45" id="kkV-PJ-vOS"/>
+                            <constraint firstItem="1Qw-Pz-Z3t" firstAttribute="leading" secondItem="dCU-aQ-cOJ" secondAttribute="leading" constant="45" id="mUH-K8-qhu"/>
+                            <constraint firstItem="vn8-AF-cmp" firstAttribute="top" secondItem="1Qw-Pz-Z3t" secondAttribute="bottom" constant="20" id="nMt-Vx-5u8"/>
+                            <constraint firstItem="1Qw-Pz-Z3t" firstAttribute="top" secondItem="mQq-C5-DUJ" secondAttribute="top" constant="138" id="wgN-mN-ezo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dCU-aQ-cOJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="IlA-V8-Lb4"/>
@@ -222,7 +258,7 @@
                             <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="40"/>
                             <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="textShadowColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.96470588239999999" alpha="1" colorSpace="calibratedRGB"/>
-                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="0.0"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="2" vertical="1"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -236,6 +272,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wxo-64-HDv"/>
+        <segue reference="huW-wL-iuF"/>
     </inferredMetricsTieBreakers>
 </document>
