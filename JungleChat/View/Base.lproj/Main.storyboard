@@ -236,24 +236,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jfJ-Kn-F8j">
-                                <rect key="frame" x="0.0" y="108" width="414" height="754"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-Q1-6S3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="684"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="704"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Onq-Ju-Aab">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Onq-Ju-Aab" id="143-xi-mHT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
                                     </tableView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7z-xt-MfS">
-                                        <rect key="frame" x="20" y="704" width="374" height="50"/>
+                                        <rect key="frame" x="20" y="724" width="374" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKC-U0-Trg" userLabel="ChatTextField">
                                                 <rect key="frame" x="0.0" y="0.0" width="312" height="50"/>
@@ -277,6 +267,9 @@
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sendPressed:" destination="ua8-Yg-IhR" eventType="touchUpInside" id="avf-Cf-kBU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -294,14 +287,24 @@
                         </subviews>
                         <color key="backgroundColor" red="0.41568627450980389" green="0.5490196078431373" blue="0.68627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jfJ-Kn-F8j" firstAttribute="top" secondItem="TXw-SC-a1l" secondAttribute="top" constant="20" id="1Jn-F4-o1Z"/>
+                            <constraint firstItem="jfJ-Kn-F8j" firstAttribute="top" secondItem="TXw-SC-a1l" secondAttribute="top" id="1Jn-F4-o1Z"/>
                             <constraint firstItem="TXw-SC-a1l" firstAttribute="bottom" secondItem="jfJ-Kn-F8j" secondAttribute="bottom" id="6mM-JG-Zm7"/>
                             <constraint firstItem="TXw-SC-a1l" firstAttribute="trailing" secondItem="jfJ-Kn-F8j" secondAttribute="trailing" id="KaR-Zh-SrW"/>
                             <constraint firstItem="jfJ-Kn-F8j" firstAttribute="leading" secondItem="Sbl-dd-7Xv" secondAttribute="leading" id="R6c-7d-yJd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TXw-SC-a1l"/>
                     </view>
-                    <navigationItem key="navigationItem" title="JungleChat" id="hkN-f6-UQO"/>
+                    <navigationItem key="navigationItem" title="JungleChat" id="hkN-f6-UQO">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="dhy-8I-o6j">
+                            <connections>
+                                <action selector="logOutPressed:" destination="ua8-Yg-IhR" id="aoZ-DI-60p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="messageTextField" destination="kKC-U0-Trg" id="pIR-SM-Vy6"/>
+                        <outlet property="tableView" destination="hYO-Q1-6S3" id="575-KL-Cm9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RCl-uG-zQA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

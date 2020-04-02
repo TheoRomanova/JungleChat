@@ -2,7 +2,7 @@
 //  PlayerService.swift
 //  JungleChat
 //
-//  Created by Theodora on 4/1/20.
+//  Created by Theodora on 4/2/20.
 //  Copyright © 2020 Feodora Andryieuskaya. All rights reserved.
 //
 
@@ -24,4 +24,3 @@ struct PlayerService {
         player.play()
     }
 }
-
