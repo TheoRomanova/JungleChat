@@ -106,6 +106,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="7E1-vo-WnB"/>
                                 </constraints>
+                                <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="30"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -115,6 +116,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="fCi-xt-pDu"/>
                                 </constraints>
+                                <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -173,6 +175,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Rvq-eR-0ee"/>
                                 </constraints>
+                                <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -182,6 +185,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="eb0-qG-hOs"/>
                                 </constraints>
+                                <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -251,6 +255,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="304" id="W7C-Fy-ZTe"/>
                                                 </constraints>
+                                                <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -342,6 +347,6 @@
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="huW-wL-iuF"/>
+        <segue reference="Wxo-64-HDv"/>
     </inferredMetricsTieBreakers>
 </document>

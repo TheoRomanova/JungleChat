@@ -35,16 +35,16 @@
                                 <rect key="frame" x="50" y="0.0" width="230" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="myLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuT-6P-Q4i">
-                                        <rect key="frame" x="10" y="10" width="210" height="20"/>
-                                        <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="25"/>
+                                        <rect key="frame" x="10" y="5" width="210" height="30"/>
+                                        <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="22"/>
                                         <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.74901960779999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="fuT-6P-Q4i" secondAttribute="bottom" constant="10" id="FSQ-02-8rh"/>
-                                    <constraint firstItem="fuT-6P-Q4i" firstAttribute="top" secondItem="Ml9-rb-Jgi" secondAttribute="top" constant="10" id="cTZ-bn-rlE"/>
+                                    <constraint firstAttribute="bottom" secondItem="fuT-6P-Q4i" secondAttribute="bottom" constant="5" id="FSQ-02-8rh"/>
+                                    <constraint firstItem="fuT-6P-Q4i" firstAttribute="top" secondItem="Ml9-rb-Jgi" secondAttribute="top" constant="5" id="cTZ-bn-rlE"/>
                                     <constraint firstAttribute="trailing" secondItem="fuT-6P-Q4i" secondAttribute="trailing" constant="10" id="ksY-Jl-Odf"/>
                                     <constraint firstItem="fuT-6P-Q4i" firstAttribute="leading" secondItem="Ml9-rb-Jgi" secondAttribute="leading" constant="10" id="std-39-Pbf"/>
                                 </constraints>

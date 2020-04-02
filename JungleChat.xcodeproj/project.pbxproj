@@ -11,6 +11,7 @@
 		6854E2652435FE22003501FC /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6854E2632435FE22003501FC /* MessageCell.xib */; };
 		6854E267243606E4003501FC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854E266243606E4003501FC /* Message.swift */; };
 		6854E26A243607AD003501FC /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854E269243607AD003501FC /* PlayerService.swift */; };
+		6854E26C24365A53003501FC /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6854E26B24365A53003501FC /* message.wav */; };
 		687DA20C2433508B00B5B46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20B2433508B00B5B46C /* AppDelegate.swift */; };
 		687DA20E2433508B00B5B46C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20D2433508B00B5B46C /* SceneDelegate.swift */; };
 		687DA2102433508B00B5B46C /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20F2433508B00B5B46C /* WelcomeVC.swift */; };
@@ -33,6 +34,7 @@
 		6854E2632435FE22003501FC /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = SOURCE_ROOT; };
 		6854E266243606E4003501FC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		6854E269243607AD003501FC /* PlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerService.swift; sourceTree = "<group>"; };
+		6854E26B24365A53003501FC /* message.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = message.wav; sourceTree = "<group>"; };
 		687DA2082433508B00B5B46C /* JungleChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JungleChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		687DA20B2433508B00B5B46C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		687DA20D2433508B00B5B46C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		687DA22C24339E4800B5B46C /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				6854E26B24365A53003501FC /* message.wav */,
 				687DA22A24339E4300B5B46C /* monkey.wav */,
 				687DA22E2433AD5900B5B46C /* register.wav */,
 				687DA22D2433AD5900B5B46C /* login.wav */,
@@ -238,6 +241,7 @@
 			files = (
 				687DA2182433508E00B5B46C /* LaunchScreen.storyboard in Resources */,
 				688790DB2434EDEB008F6F8D /* GoogleService-Info.plist in Resources */,
+				6854E26C24365A53003501FC /* message.wav in Resources */,
 				687DA2282433804100B5B46C /* Neucha-Regular.ttf in Resources */,
 				687DA22B24339E4300B5B46C /* monkey.wav in Resources */,
 				6854E2652435FE22003501FC /* MessageCell.xib in Resources */,
