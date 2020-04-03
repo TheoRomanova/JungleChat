@@ -32,36 +32,36 @@ class ChatVC: UIViewController {
     
     func loadMessages() {
         db.collection("messages").order(by: "data").addSnapshotListener { (querySnapshot, error) in
-
+            
             self.messages = []
-
-                if let e = error {
-                    print("There was an error data from Firestore. \(e)")
-                } else {
-                    if let snapshotDocuments = querySnapshot?.documents {
-                        for doc in snapshotDocuments {
-                            let data = doc.data()
-                            if let messageSender = data["sender"] as? String, let messageBody = data["body"] as? String {
-                                let newMessage = Message(sender: messageSender, body: messageBody)
-                                self.messages.append(newMessage)
-
-                                DispatchQueue.main.async {
-                                    self.tableView.reloadData()
-                        
-                                    let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
-                                    self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-                                }
-
+            
+            if let e = error {
+                print("There was an error data from Firestore. \(e)")
+            } else {
+                if let snapshotDocuments = querySnapshot?.documents {
+                    for doc in snapshotDocuments {
+                        let data = doc.data()
+                        if let messageSender = data["sender"] as? String, let messageBody = data["body"] as? String {
+                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            self.messages.append(newMessage)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                                
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
+                            
                         }
                     }
                 }
+            }
         }
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
         PlayerService.playSound(song: "message", loopsCount: 0)
-       
+        
         if let messageSender = Auth.auth().currentUser?.email, let messageBody = messageTextField.text {
             db.collection("messages").addDocument(data: ["sender": messageSender, "body": messageBody, "data": Date().timeIntervalSince1970])
             { (error) in
