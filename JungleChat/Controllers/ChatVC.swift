@@ -29,12 +29,12 @@ class ChatVC: UIViewController {
         tableView.backgroundColor = #colorLiteral(red: 0.4156862745, green: 0.5490196078, blue: 0.6862745098, alpha: 1)
         loadMessages()
     }
-    
+
     func loadMessages() {
         db.collection("messages").order(by: "data").addSnapshotListener { (querySnapshot, error) in
-            
+
             self.messages = []
-            
+
             if let e = error {
                 print("There was an error data from Firestore. \(e)")
             } else {
@@ -44,14 +44,13 @@ class ChatVC: UIViewController {
                         if let messageSender = data["sender"] as? String, let messageBody = data["body"] as? String {
                             let newMessage = Message(sender: messageSender, body: messageBody)
                             self.messages.append(newMessage)
-                            
+
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
-                                
+
                                 let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
                                 self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
-                            
                         }
                     }
                 }

@@ -34,6 +34,7 @@ class LoginVC: UIViewController {
                     let action = UIAlertAction(title: "Try again 🦧🌴", style: .cancel, handler: nil)
                     alert.addAction(action)
                     self.present(alert, animated: true, completion: nil)
+               
                 } else {
                     PlayerService.playSound(song: "login", loopsCount: 0)
                     self.performSegue(withIdentifier: "LoginToChat", sender: self)
