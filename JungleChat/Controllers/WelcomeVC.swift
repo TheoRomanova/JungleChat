@@ -36,7 +36,7 @@ class WelcomeVC: UIViewController {
         
         titleLabel.text = ""
         var time = 0.0
-        let title = "🌴JungleChat🌴🐒"
+        let title = "🌴🦧JungleChat🐒"
         
         for char in title {
             Timer.scheduledTimer(withTimeInterval: 0.1 * time, repeats: false) { (timer) in
