@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wch-C9-qw5">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +29,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="2" height="2"/>
+                                <size key="shadowOffset" width="1" height="1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpC-PE-xt1">
                                 <rect key="frame" x="0.0" y="574" width="414" height="60"/>
@@ -38,10 +38,10 @@
                                     <constraint firstAttribute="height" constant="60" id="EUA-gE-g6C"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="45"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.93333333330000001" green="0.97647058819999999" blue="0.98572514681208057" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="s4P-kH-IDs" kind="show" id="9Gg-Wx-9lH"/>
@@ -54,10 +54,10 @@
                                     <constraint firstAttribute="height" constant="60" id="5NR-Ah-cOl"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="45"/>
-                                <size key="titleShadowOffset" width="4" height="1"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="jt9-iR-hcW" kind="show" id="J5P-LE-U5g"/>
@@ -118,7 +118,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OV8-PU-cbU">
                                 <rect key="frame" x="110" y="293" width="194" height="60"/>
@@ -126,10 +126,10 @@
                                     <constraint firstAttribute="height" constant="60" id="a3a-nb-Lm5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="50"/>
-                                <size key="titleShadowOffset" width="2" height="1"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="registerTapped:" destination="s4P-kH-IDs" eventType="touchUpInside" id="Lf3-wG-aBj"/>
@@ -187,7 +187,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="30"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sg9-XX-xSA">
                                 <rect key="frame" x="110" y="288" width="194" height="60"/>
@@ -195,10 +195,10 @@
                                     <constraint firstAttribute="height" constant="60" id="hlc-IO-pP2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="50"/>
-                                <size key="titleShadowOffset" width="4" height="1"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="loginTapped:" destination="jt9-iR-hcW" eventType="touchUpInside" id="awJ-OX-kxD"/>
@@ -231,7 +231,7 @@
             </objects>
             <point key="canvasLocation" x="1945" y="455"/>
         </scene>
-        <!--ChatVC-->
+        <!--🌴JungleChat🌴-->
         <scene sceneID="XLg-Nv-f7a">
             <objects>
                 <viewController id="ua8-Yg-IhR" customClass="ChatVC" customModule="JungleChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -242,7 +242,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jfJ-Kn-F8j">
                                 <rect key="frame" x="0.0" y="20" width="414" height="734"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-Q1-6S3">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hYO-Q1-6S3">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="664"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </tableView>
@@ -299,7 +299,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TXw-SC-a1l"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hkN-f6-UQO">
+                    <navigationItem key="navigationItem" title="🌴JungleChat🌴" id="hkN-f6-UQO">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="dhy-8I-o6j">
                             <connections>
                                 <action selector="logOutPressed:" destination="ua8-Yg-IhR" id="aoZ-DI-60p"/>
@@ -327,10 +327,10 @@
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="40"/>
-                            <color key="textColor" red="0.41568627450000001" green="0.54901960780000003" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <color key="textShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <offsetWrapper key="textShadowOffset" horizontal="0.0" vertical="0.0"/>
+                            <fontDescription key="fontDescription" name="Neucha" family="Neucha" pointSize="35"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <offsetWrapper key="textShadowOffset" horizontal="1" vertical="1"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" red="0.45882352939999999" green="0.71764705880000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

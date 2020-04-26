@@ -21,6 +21,8 @@ class ChatVC: UIViewController {
         super.viewDidLoad()
         
         tableView.dataSource = self
+        tableView.delegate = self
+       
         messageTextField.layer.cornerRadius = 20
         navigationItem.hidesBackButton = true
         
@@ -32,17 +34,17 @@ class ChatVC: UIViewController {
 
     func loadMessages() {
         db.collection("messages").order(by: "data").addSnapshotListener { (querySnapshot, error) in
-
             self.messages = []
 
             if let e = error {
                 print("There was an error data from Firestore. \(e)")
             } else {
                 if let snapshotDocuments = querySnapshot?.documents {
+                   print(snapshotDocuments)
                     for doc in snapshotDocuments {
                         let data = doc.data()
                         if let messageSender = data["sender"] as? String, let messageBody = data["body"] as? String {
-                            let newMessage = Message(sender: messageSender, body: messageBody)
+                            let newMessage = Message(sender: messageSender, body: messageBody, id: doc.documentID)
                             self.messages.append(newMessage)
 
                             DispatchQueue.main.async {
@@ -62,7 +64,7 @@ class ChatVC: UIViewController {
         PlayerService.playSound(song: "message", loopsCount: 0)
         
         if let messageSender = Auth.auth().currentUser?.email, let messageBody = messageTextField.text {
-            db.collection("messages").addDocument(data: ["sender": messageSender, "body": messageBody, "data": Date().timeIntervalSince1970])
+            db.collection("messages").addDocument(data: ["sender": messageSender, "body": messageBody, "data": Date().timeIntervalSince1970] )
             { (error) in
                 if let e = error {
                     print("Error adding document!: \(e)")
@@ -119,5 +121,24 @@ extension ChatVC: UITableViewDataSource {
     }
 }
 
+// MARK: - Table view Delegate
 
+extension ChatVC: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        db.collection("messages").document(messages[indexPath.row].id).delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+        
+        messages.remove(at: indexPath.row)
+        
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        tableView.reloadData()
+    }
+}
 

@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		522294944E80CC0CCFA9A323 /* Pods_JungleChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56DF31958D7070B291927261 /* Pods_JungleChat.framework */; };
 		6854E2642435FE22003501FC /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854E2622435FE22003501FC /* MessageCell.swift */; };
 		6854E2652435FE22003501FC /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6854E2632435FE22003501FC /* MessageCell.xib */; };
 		6854E267243606E4003501FC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854E266243606E4003501FC /* Message.swift */; };
 		6854E26A243607AD003501FC /* PlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6854E269243607AD003501FC /* PlayerService.swift */; };
 		6854E26C24365A53003501FC /* message.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6854E26B24365A53003501FC /* message.wav */; };
-		6864D41C24373F7800CCE2B9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6864D41B24373F7800CCE2B9 /* IQKeyboardManagerSwift */; };
+		6864D41C24373F7800CCE2B9 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 6864D41B24373F7800CCE2B9 /* SwiftPackageProductDependency */; };
 		687DA20C2433508B00B5B46C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20B2433508B00B5B46C /* AppDelegate.swift */; };
 		687DA20E2433508B00B5B46C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20D2433508B00B5B46C /* SceneDelegate.swift */; };
 		687DA2102433508B00B5B46C /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687DA20F2433508B00B5B46C /* WelcomeVC.swift */; };
@@ -27,10 +28,25 @@
 		687DA22F2433AD5900B5B46C /* login.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22D2433AD5900B5B46C /* login.wav */; };
 		687DA2302433AD5900B5B46C /* register.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687DA22E2433AD5900B5B46C /* register.wav */; };
 		688790DB2434EDEB008F6F8D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 688790DA2434EDEB008F6F8D /* GoogleService-Info.plist */; };
-		C3DF72FC2A50ECC670BCA793 /* Pods_JungleChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03102CD218AEA71755540E3 /* Pods_JungleChat.framework */; };
+		688837E12451A70A0047CA9A /* Pods_JungleChat.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D03102CD218AEA71755540E3 /* Pods_JungleChat.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		688837E22451A70A0047CA9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				688837E12451A70A0047CA9A /* Pods_JungleChat.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		56DF31958D7070B291927261 /* Pods_JungleChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JungleChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6854E2622435FE22003501FC /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = SOURCE_ROOT; };
 		6854E2632435FE22003501FC /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = SOURCE_ROOT; };
 		6854E266243606E4003501FC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
@@ -52,6 +68,9 @@
 		687DA22D2433AD5900B5B46C /* login.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = login.wav; sourceTree = "<group>"; };
 		687DA22E2433AD5900B5B46C /* register.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = register.wav; sourceTree = "<group>"; };
 		688790DA2434EDEB008F6F8D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		688837E32451A7550047CA9A /* FirebaseAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		688837E42451A7550047CA9A /* FirebaseCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		688837E52451A7550047CA9A /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EBE13479182826B287E7C2 /* Pods-JungleChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JungleChat.release.xcconfig"; path = "Target Support Files/Pods-JungleChat/Pods-JungleChat.release.xcconfig"; sourceTree = "<group>"; };
 		BE533171940117F76202239F /* Pods-JungleChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JungleChat.debug.xcconfig"; path = "Target Support Files/Pods-JungleChat/Pods-JungleChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D03102CD218AEA71755540E3 /* Pods_JungleChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JungleChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,8 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3DF72FC2A50ECC670BCA793 /* Pods_JungleChat.framework in Frameworks */,
-				6864D41C24373F7800CCE2B9 /* IQKeyboardManagerSwift in Frameworks */,
+				6864D41C24373F7800CCE2B9 /* BuildFile in Frameworks */,
+				522294944E80CC0CCFA9A323 /* Pods_JungleChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +186,10 @@
 		E8FDE0D1B68A3557FCEE73DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D03102CD218AEA71755540E3 /* Pods_JungleChat.framework */,
+				688837E32451A7550047CA9A /* FirebaseAuth.framework */,
+				688837E42451A7550047CA9A /* FirebaseCore.framework */,
+				688837E52451A7550047CA9A /* FirebaseCoreDiagnostics.framework */,
+				56DF31958D7070B291927261 /* Pods_JungleChat.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,7 +214,8 @@
 				687DA2042433508B00B5B46C /* Sources */,
 				687DA2052433508B00B5B46C /* Frameworks */,
 				687DA2062433508B00B5B46C /* Resources */,
-				F27079E545350099CC389078 /* [CP] Embed Pods Frameworks */,
+				688837E22451A70A0047CA9A /* Embed Frameworks */,
+				34EEA0A51355E7D37AFD1E0D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,7 +223,7 @@
 			);
 			name = JungleChat;
 			packageProductDependencies = (
-				6864D41B24373F7800CCE2B9 /* IQKeyboardManagerSwift */,
+				6864D41B24373F7800CCE2B9 /* SwiftPackageProductDependency */,
 			);
 			productName = JungleChat;
 			productReference = 687DA2082433508B00B5B46C /* JungleChat.app */;
@@ -231,7 +254,7 @@
 			);
 			mainGroup = 687DA1FF2433508B00B5B46C;
 			packageReferences = (
-				6864D41A24373F7800CCE2B9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				6864D41A24373F7800CCE2B9 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 687DA2092433508B00B5B46C /* Products */;
 			projectDirPath = "";
@@ -263,6 +286,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		34EEA0A51355E7D37AFD1E0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		43E961760FAC9AFAA60D1BF9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,23 +323,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F27079E545350099CC389078 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JungleChat/Pods-JungleChat-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -519,7 +542,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		6864D41A24373F7800CCE2B9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+		6864D41A24373F7800CCE2B9 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
 			requirement = {
@@ -530,9 +553,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6864D41B24373F7800CCE2B9 /* IQKeyboardManagerSwift */ = {
+		6864D41B24373F7800CCE2B9 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 6864D41A24373F7800CCE2B9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			package = 6864D41A24373F7800CCE2B9 /* RemoteSwiftPackageReference */;
 			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */

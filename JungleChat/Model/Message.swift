@@ -10,5 +10,6 @@ import Foundation
 
 struct Message {
     var sender: String
-    var body: String   
+    var body: String
+    var id: String
 }
