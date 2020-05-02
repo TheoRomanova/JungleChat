@@ -121,24 +121,31 @@ extension ChatVC: UITableViewDataSource {
     }
 }
 
-// MARK: - Table view Delegate
+// MARK: - Delete message
 
 extension ChatVC: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        db.collection("messages").document(messages[indexPath.row].id).delete() { err in
-            if let err = err {
-                print("Error removing document: \(err)")
-            } else {
-                print("Document successfully removed!")
+        let ac = UIAlertController(title: "", message: "Do you want delete message?", preferredStyle: .alert)
+        let deleteAction = UIAlertAction(title: "Yes", style: .default) { (action) in
+            
+            self.db.collection("messages").document(self.messages[indexPath.row].id).delete() { err in
+                if let err = err {
+                    print("Error removing document: \(err)")
+                } else {
+                    print("Document successfully removed!")
+                }
             }
+            self.messages.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
         }
-        
-        messages.remove(at: indexPath.row)
-        
-        tableView.deleteRows(at: [indexPath], with: .fade)
-        tableView.reloadData()
+        let cancelAction = UIAlertAction(title: "Cancel", style: .destructive)
+        ac.addAction(deleteAction)
+        ac.addAction(cancelAction)
+        self.present(ac, animated: true, completion: nil)
     }
 }
 
